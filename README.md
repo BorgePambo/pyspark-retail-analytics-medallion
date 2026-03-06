@@ -2,7 +2,8 @@ Gere um README.md profissional para um projeto de Engenharia de Dados.
 
 Contexto do projeto:
 
-Nome do projeto: Retail Analytics with PySpark
+### Nome do projeto: Retail Analytics with PySpark
+
 <img width="1307" height="616" alt="medallion_spark" src="https://github.com/user-attachments/assets/fb639e83-7d0c-4889-b2f7-ccf47c2e5524" />
 
 Objetivo:
@@ -24,23 +25,23 @@ O cluster Spark roda em Docker com:
 
 Estrutura do projeto:
 
-project/
-│
-├── data/
-│   ├── raw/        # dados brutos
-│   ├── bronze/     # dados ingeridos
-│   ├── silver/     # dados limpos e transformados
-│   └── gold/       # métricas para analytics
-│
-├── src/
-│   ├── bronze.py   # ingestão de dados
-│   ├── silver.py   # limpeza e transformação
-│   └── gold.py     # criação de métricas
-│
-├── docker-compose.yml
-├── generate_raw_data.py
-└── imagem/
-    └── medallion_spark.png
+    project/
+    │
+    ├── data/
+    │   ├── raw/        # dados brutos
+    │   ├── bronze/     # dados ingeridos
+    │   ├── silver/     # dados limpos e transformados
+    │   └── gold/       # métricas para analytics
+    │
+    ├── src/
+    │   ├── bronze.py   # ingestão de dados
+    │   ├── silver.py   # limpeza e transformação
+    │   └── gold.py     # criação de métricas
+    │
+    ├── docker-compose.yml
+    ├── generate_raw_data.py
+    └── imagem/
+        └── medallion_spark.png
 
 Fluxo de dados:
 
@@ -59,6 +60,9 @@ Silver:
 
 Gold:
 Criação de métricas analíticas:
+
+### DASHBOARD
+<img width="1283" height="728" alt="dashboard2" src="https://github.com/user-attachments/assets/bfb223b6-c479-475f-9867-d50d24a549e2" />
 
 1. daily_sales_metrics
    - order_date
