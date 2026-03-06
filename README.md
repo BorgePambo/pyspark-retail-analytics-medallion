@@ -87,11 +87,20 @@ Criação de métricas analíticas:
    - count
 
 
-# Executar PySpark diretamente no Worker:
-
-docker exec -it spark-worker-1 /opt/spark/bin/pyspark --master spark://spark-master:7077
 
 - como executar scripts PySpark
+### Executar PySpark diretamente no Worker
+
+Para abrir um terminal interativo do PySpark no worker, conectado ao master Spark, use:
+
+```bash
+docker exec -it spark-worker-1 /opt/spark/bin/pyspark --master spark://spark-master:7077
+
+- Este comando abre um terminal interativo do PySpark no worker, conectado ao master Spark. A partir daí, você pode executar os scripts bronze.py, silver.py e gold.py diretamente no cluster.”
+
+
+
+
 - exemplos de consultas analíticas
 - exemplos de dashboards possíveis no Power BI
 
