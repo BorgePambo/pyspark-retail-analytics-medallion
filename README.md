@@ -1,4 +1,3 @@
-Gere um README.md profissional para um projeto de Engenharia de Dados.
 
 Contexto do projeto:
 
@@ -87,13 +86,11 @@ Criação de métricas analíticas:
    - order_status
    - count
 
-Também inclua no README:
 
-- descrição do projeto
-- arquitetura do pipeline
-- estrutura de pastas
-- como rodar o projeto
-- como subir o cluster Spark com Docker
+# Executar PySpark diretamente no Worker:
+
+docker exec -it spark-worker-1 /opt/spark/bin/pyspark --master spark://spark-master:7077
+
 - como executar scripts PySpark
 - exemplos de consultas analíticas
 - exemplos de dashboards possíveis no Power BI
